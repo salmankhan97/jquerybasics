@@ -1,0 +1,63 @@
+body{
+	overflow-x: hidden;
+	background-color: #FFF;
+}
+.bodybg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: #000000db;
+	opacity: 0;
+	z-index: -1;
+	transition: all 1s;
+}
+.gearbox{
+	position: absolute;
+	top: 10%;
+	left: 100%;
+	width: 250px;
+	background: #fff;
+	padding: 5px 5px;
+	border-radius: 4px;
+	transition: all 1s;
+}
+.gearbox h6{
+	display: inline-block;
+	padding-right: 5px;
+}
+.gearbox .white{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-color: 2px solid #e0e0e0;
+	background: #FFF;
+	border-radius: 2px;
+	padding-right: 5px;
+}
+.gearbox .dark{
+
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-color: 2px solid #e0e0e0;
+	background: #000;
+	border-radius: 2px;
+}
+.gear{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform:translateX(-110%) rotate(0deg);
+	font-size: 18px;
+	background-color: transparent;
+	color: #ff000080;
+	transition: all 0.3s;
+}
+.gear:hover{
+	color: red;
+	transform:translateX(-110%) rotate(-45deg);
+}
+.gear:focus{
+	outline: 0;
+}
